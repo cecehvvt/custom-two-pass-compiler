@@ -1,4 +1,4 @@
-![alt text](<Ekran görüntüsü 2026-05-27 010405.png>)
+![Compiler GUI](images/compiler_gui.png)
 # Two-Pass Compiler Project
 
 A Python-based two-pass compiler developed for the System Programming course. The project implements a custom programming language and demonstrates the fundamental stages of compiler design, including lexical analysis, syntax analysis, semantic analysis, symbol table management, and Abstract Syntax Tree (AST) generation.
