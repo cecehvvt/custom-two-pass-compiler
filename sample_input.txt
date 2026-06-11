@@ -1,0 +1,34 @@
+RUN 100;
+
+NAT x
+NAT y
+COMMA result
+TWINAT total
+TWINCO average
+
+TAKE <- "Enter x"
+TAKE <- "Enter y"
+
+result [ x PLUS y BUMP 2]
+total [ x PLUS y]
+average [ result CUT 2.0]
+
+THIS (result > 15) {
+    GIVE -> "Result is large"
+} OR {
+    GIVE -> "Result is small"
+}
+
+WHEN (x > 0) {
+    EX x
+}
+
+CYC (NAT i = 0, 5, NEXT) {
+    GIVE -> "Loop running"
+}
+
+STOP;
+
+z BY 5
+x BY 3.14
+result BY "hello"
